@@ -1,0 +1,9 @@
+name: pagerank-algo
+channels:
+  - anaconda
+  - defaults
+dependencies:
+  - matplotlib=3.3.2=0
+  - networkx=2.5=py_0
+  - numpy=1.19.2=py36h54aff64_0
+  - python=3.6.12=hcff3b4d_2
