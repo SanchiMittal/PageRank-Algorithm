@@ -1,4 +1,4 @@
-# PagerRank-Algorithm
+# PageRank-Algorithm
 
 ### Creating the virtual environment 
 Use environment.yml with conda package manager to create the pagerank-algo environment.
