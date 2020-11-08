@@ -28,11 +28,28 @@ def get_all_ranks(init_rank, in_link_nodes, out_degree, d=0.85, total_nodes=10, 
 	total_edges -> total no. of edges
 	d -> damping factor
 	total_iterations
+
+	Returns:
+	list of ranks(size: iterations+1)
+	list of rank_sums(size: iterations+1)
 	"""
-	ranks = init_rank
-	final_ranks = [0]*(iterations + 1)
+	ranks = [0]*(iterations + 1)
 	rank_sums = [0]*(iterations + 1)
+	ranks[0] = init_rank
 	for i in range(1, iterations + 1, 1):
-		final_ranks[i], rank_sums[i] = calc_page_rank(final_ranks[i - 1], in_link_nodes, out_degree, d, total_nodes, total_edges)
+		ranks[i], rank_sums[i] = calc_page_rank(ranks[i - 1], in_link_nodes, out_degree, d, total_nodes, total_edges)
 	
-	return final_ranks, rank_sums
+	return ranks, rank_sums
+
+
+def get_whole_ranks(ranks):
+	"""
+	Args: array of ranks from a single iteration
+	Returns: array of whole no. ranks
+	"""
+	whole_ranks = {}
+	sorted_ranks = sorted(ranks)
+	for i in range(len(ranks)):
+		whole_ranks[i+1] = sorted_ranks.index(ranks[i])+1
+
+	return whole_ranks
