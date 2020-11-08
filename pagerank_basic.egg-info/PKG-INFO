@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pagerank-basic
+Version: 0.2
+Summary: Basic Pagerank Algorithm that generates a random graph and finds ranks for the nodes (pages).
+Home-page: https://github.com/SanchiMittal/PageRank-Algorithm.git
+Author: Sanchi Mittal, Satyabrata Panda
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
