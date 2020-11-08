@@ -30,9 +30,9 @@ def get_all_ranks(init_rank, in_link_nodes, out_degree, d=0.85, total_nodes=10, 
 	total_iterations
 	"""
 	ranks = init_rank
-	final_ranks = [0]*iterations
-	rank_sums = [0]*iterations
-	for i in range(0, iterations, 1):
-		final_ranks[i], rank_sums[i] = calc_page_rank(ranks, in_link_nodes, out_degree, d, total_nodes, total_edges)
+	final_ranks = [0]*(iterations + 1)
+	rank_sums = [0]*(iterations + 1)
+	for i in range(1, iterations + 1, 1):
+		final_ranks[i], rank_sums[i] = calc_page_rank(final_ranks[i - 1], in_link_nodes, out_degree, d, total_nodes, total_edges)
 	
 	return final_ranks, rank_sums
