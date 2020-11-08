@@ -50,6 +50,6 @@ def get_whole_ranks(ranks):
 	whole_ranks = {}
 	sorted_ranks = sorted(ranks)
 	for i in range(len(ranks)):
-		whole_ranks[i+1] = sorted_ranks.index(ranks[i])+1
+		whole_ranks[i] = sorted_ranks.index(ranks[i])+1
 
 	return whole_ranks
