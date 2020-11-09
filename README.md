@@ -31,4 +31,4 @@ Then activate the environment using:
     $ python3 main.py
 <!-- </pre> -->
 
-### Execution of the main.py demonstrated a basic version of the pagerank_basic package. Checkout the <strong><i>outputs.ipynb</i></strong> notebook for more detailed demonstration of using the package with the help of pip.
+Execution of the main.py demonstrated a basic version of the pagerank_basic package. Checkout the <strong><i>outputs.ipynb</i></strong> notebook for more detailed demonstration of using the package with the help of pip.
