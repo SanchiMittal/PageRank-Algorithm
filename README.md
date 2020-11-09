@@ -13,6 +13,8 @@ The PageRank algorithm used here is based on the ["Random Walk Method"](https://
 ### Usage Example
 [Demo](https://github.com/SanchiMittal/PageRank-Algorithm/blob/main/outputs.ipynb)
 
+Execution of the main.py demonstrated a basic version of the pagerank_basic package. Checkout the <strong><i>outputs.ipynb</i></strong> notebook for more detailed demonstration of using the package with the help of pip.
+
 ### Creating the virtual environment 
 
 Use [environment.yml](https://github.com/SanchiMittal/PageRank-Algorithm/blob/main/environment.yml) with conda package manager to create the pagerank-algo environment.
@@ -32,5 +34,4 @@ Then activate the environment using:
     $ python3 main.py
 <!-- </pre> -->
 
-Execution of the main.py demonstrated a basic version of the pagerank_basic package. Checkout the <strong><i>outputs.ipynb</i></strong> notebook for more detailed demonstration of using the package with the help of pip.
 
