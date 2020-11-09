@@ -23,3 +23,12 @@ Then activate the environment using:
 
     $ conda activate pagerank-algo
 
+### Development ( You can directly use the package from here )
+
+<!-- <pre> -->
+    $ git clone https://github.com/SanchiMittal/PageRank-Algorithm.git
+    $ cd PageRank-Algorithm
+    $ python3 main.py
+<!-- </pre> -->
+
+### Execution of the main.py demonstrated a basic version of the pagerank_basic package. Checkout the <strong><i>outputs.ipynb</i></strong> notebook for more detailed demonstration of using the package with the help of pip.
